@@ -1,6 +1,6 @@
 //N-Repeated Element in Size 2N Array
 
-/*Problem Explanation:
+/*Problem Explanation: 
 
 You are given a list of integers nums that has the following characteristics:
 The length of nums is 2 * n.
