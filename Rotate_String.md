@@ -4,7 +4,7 @@ We are given two strings **s** and **goal**.
 We can rotate string **s** any number of times.
 Our task is to check **whether `s` can become `goal` after rotations**.
 
-A rotation means:
+A rotation means: 
 
 * Take characters from the front of the string
 * Move them to the end
