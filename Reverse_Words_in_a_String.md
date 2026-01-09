@@ -62,19 +62,16 @@ public:
         vector<string> words;
 
         while (i < n) {
-            // Skip spaces
             while (i < n && s[i] == ' ') i++;
 
             if (i < n) {
                 int start = i;
-                // Read the word
                 while (i < n && s[i] != ' ') i++;
                 words.push_back(s.substr(start, i - start));
             }
         }
 
         string result = "";
-        // Build answer in reverse order
         for (int j = words.size() - 1; j >= 0; --j) {
             result += words[j];
             if (j > 0) result += " ";
@@ -90,7 +87,7 @@ public:
 **Input**
 
 ```
-s = "  hello   world  "
+s = "hello world"
 ```
 
 **Words extracted**
@@ -108,6 +105,4 @@ s = "  hello   world  "
 ### Complexity Analysis
 
 * **Time Complexity:** `O(n)`
-  (Each character is processed once)
 * **Space Complexity:** `O(n)`
-  (Extra space for storing words)
