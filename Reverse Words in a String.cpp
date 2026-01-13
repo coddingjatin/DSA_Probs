@@ -17,6 +17,6 @@ public:
             result += words[j];
             if (j > 0) result += " ";
         }
-        return result;
+        return result; 
     }
 };
