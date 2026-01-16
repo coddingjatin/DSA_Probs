@@ -67,24 +67,17 @@ public:
     int maximizeSquareArea(int m, int n, vector<int>& h, vector<int>& v) {
         int mod = 1e9 + 7;
         unordered_set<int> s1, s2;
-
-        // Add boundary fences
         h.push_back(1);
         h.push_back(m);
         v.push_back(1);
         v.push_back(n);
-
         sort(h.begin(), h.end());
         sort(v.begin(), v.end());
-
-        // All possible horizontal distances
         for (int i = 0; i < h.size(); i++) {
             for (int j = i + 1; j < h.size(); j++) {
                 s1.insert(h[j] - h[i]);
             }
         }
-
-        // All possible vertical distances
         for (int i = 0; i < v.size(); i++) {
             for (int j = i + 1; j < v.size(); j++) {
                 s2.insert(v[j] - v[i]);
@@ -92,8 +85,6 @@ public:
         }
 
         long long ans = 0;
-
-        // Find maximum common distance
         for (auto d : s1) {
             if (s2.find(d) != s2.end()) {
                 long long area = 1LL * d * d;
