@@ -1,6 +1,6 @@
 ## Maximum Dot Product of Two Subsequences  
 
-### Problem Statement
+### Problem Statement 
 
 Given two integer arrays `nums1` and `nums2`, return the **maximum dot product** between **non-empty subsequences** of the two arrays.
 
