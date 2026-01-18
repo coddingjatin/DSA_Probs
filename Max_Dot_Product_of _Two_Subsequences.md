@@ -1,4 +1,4 @@
-## Maximum Dot Product of Two Subsequences  
+## Maximum Dot Product of Two Subsequences   
 
 ### Problem Statement  
 
