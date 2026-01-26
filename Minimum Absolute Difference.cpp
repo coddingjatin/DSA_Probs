@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> minimumAbsDifference(vector<int>& arr) {
-        int n = arr.size();
+        int n = arr.size(); 
         if(n == 0)
             return vector<vector<int>> ();
         vector<vector<int>> result;
