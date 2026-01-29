@@ -1,9 +1,6 @@
 class Solution {
 public:
-    long long minimumCost(string source, string target,
-                          vector<char>& original,
-                          vector<char>& changed,
-                          vector<int>& cost) {
+    long long minimumCost(string source, string target, vector<char>& original, vector<char>& changed, vector<int>& cost) {
 
         const int INF = 1e9;
         vector<vector<int>> costTable(26, vector<int>(26, INF));
