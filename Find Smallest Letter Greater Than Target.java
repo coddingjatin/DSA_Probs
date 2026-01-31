@@ -1,10 +1,8 @@
 class Solution {
     public char nextGreatestLetter(char[] a, char x) {
         int n = a.length;
-       
         if (x >= a[n - 1])   x = a[0];
         else    x++;
-        
         int lo = 0, hi = n - 1;
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
