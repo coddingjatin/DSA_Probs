@@ -5,7 +5,7 @@ class Solution {
         while (i <= j && s.charAt(i) == 'L')
         {
              i++;
-        } 
+        }  
         while (i <= j && s.charAt(j) == 'R')
         { 
             j--;
