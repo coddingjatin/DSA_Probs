@@ -7,7 +7,6 @@ class Solution {
                 dp[j] += dp[j - coin];
             }
         }
-
         return dp[sum];
     }
 }
