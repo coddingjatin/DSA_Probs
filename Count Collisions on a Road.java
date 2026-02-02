@@ -16,6 +16,6 @@ class Solution {
                 collisions++;
             } 
         }
-        return collisions;
+     return collisions;
     }
 }
