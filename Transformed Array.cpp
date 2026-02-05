@@ -11,7 +11,7 @@ public:
                 int target = (i + move) % n;
                 
                 if (target < 0) target += n;
-                
+                 
                 result[i] = nums[target];
             }
         }
